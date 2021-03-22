@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Moderator Ansicht</title>
+        <link rel="stylesheet" href="styledark.css">
+    </head>
+
+
+    <style>
+      .main-cards {
+        column-count: 2;
+        column-gap: 20px;
+        
+      }
+      
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(6, 85, 105);
+        margin-bottom: 20px;
+        -webkit-column-break-inside: avoid;
+        
+        box-sizing: border-box;
+      }
+    
+      
+      .card:first-child {
+          border-radius:20px ;
+        height: 820px;
+        width: 200px;
+      }
+    
+      .card:nth-child(2) {
+        height: 200px;
+      }
+    
+      .card:nth-child(3) {
+        height: 265px;
+      }
+      .menu {
+        display: inline-block;
+      }
+      .links  {
+          padding: 2px;
+          font-size: 22px;
+          color: rgb(0, 17, 48);
+          border-radius: 20px;
+          
+      }
+    </style>
+    
+    <div class="main-cards">
+      <div class="card">menü
+          <div class="menu">
+              <a href="#"class="links">Entbannungs Anträge</a> <br>
+              <a href="#" class="links">Banns</a><br>
+              <a href="#" class="links">Audit LOG</a><br>
+              <a href="#" class="links">Reports</a><br>
+              <a href="#" class="links">Server Logs</a><br>
+          </div>
+      </div>
+      <div class="card">Card</div>
+      <div class="card">Card</div>
+    </div>
+</html>
